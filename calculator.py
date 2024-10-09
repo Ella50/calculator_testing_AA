@@ -8,6 +8,9 @@ def mult(x, y):
     return x * y
 
 def div(x, y):
-    return x / y
-
+    try:
+        return x / y
+    except ZeroDivisionError:
+        return "Error: Division by zero"
+    
 
